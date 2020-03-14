@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Block Diagram Simulator</title>
+  <style type="text/css">
+* {margin: 0; padding: 0;}
+#container {height: 100%; width:100%; font-size: 0;}
+#left, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
+#left {width: 45%}
+#right {width: 45%}
+</style>
+  <meta name="description" content="A template dynamic simulation/animation based on p5js" />
+
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+<script type="text/javascript" src="https://rawgit.com/lmccart/p5.js/master/lib/addons/p5.dom.js"></script>
+
+<p>
+ 
+ </p>
+  <div>
+      <button id="RunButton" onclick="runCallback()">Run Simulation</button>
+      Simulation Timestep: <input type="text" id="timestep" value="0.01">
+      Duration: <input type="text" id="simtime" value="1.0">
+    </div>
+    <div id="container">
+    <div id="left">
+   <p> Output Data:</p>
+    <textarea rows="10" cols="100" id="simdata">
+ time out1 out2 out3
+ </textarea>
+ </div>
+  </div> 
+</div>
+
+<input type="range" id="posSlider" max="2" min="-2" step = ".1" value="0" >
+
+<script src="simulator.js"></script>
+<div id='sketch-holder'></div>
+</body>
+</html>
