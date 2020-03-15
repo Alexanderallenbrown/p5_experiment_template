@@ -141,7 +141,7 @@ function runCallback(){
   if(!running){
   
   simtime = parseFloat(document.getElementById("simtime").value);
-  simdt = parseFloat(document.getElementById("timestep").value);
+  mysim.dt = parseFloat(document.getElementById("timestep").value);
   //reset simulation object
   mysim.reset();
 
