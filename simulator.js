@@ -128,6 +128,7 @@ function Simulation(dt,xcenter,ycenter,simscale){
     //this.x = 0;
     this.t = 0;
     this.draw();
+    this.simdata = ''
   }
 
 
